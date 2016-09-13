@@ -3,11 +3,11 @@ Gem::Specification.new do |s|
   s.platform    = Gem::Platform::RUBY
   s.name        = 'spree_product_summary'
   s.version     = '3.1.0'
-  s.summary     = 'TODO: Add gem summary here'
-  s.description = 'TODO: Add (optional) gem description here'
+  s.summary     = 'Add product summary'
+  s.description = 'Add summary field to each product'
   s.required_ruby_version = '>= 2.1.0'
 
-  # s.author    = 'You'
+  s.author      = 'Catalin'
   # s.email     = 'you@example.com'
   # s.homepage  = 'http://www.spreecommerce.com'
   s.license = 'BSD-3'
@@ -17,7 +17,7 @@ Gem::Specification.new do |s|
   s.require_path = 'lib'
   s.requirements << 'none'
 
-  s.add_dependency 'spree_core', '~> 3.1.0'
+  s.add_dependency 'spree_core', '>= 3.1.0'
 
   s.add_development_dependency 'capybara', '~> 2.6'
   s.add_development_dependency 'coffee-rails'

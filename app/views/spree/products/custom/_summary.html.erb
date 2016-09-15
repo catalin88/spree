@@ -1,0 +1,10 @@
+<% unless @product.summary.blank? %>
+  <ul id="product-summary">
+    <% @product.summary.each_line do |line| %>
+      <li><%= line.chomp %></li>
+    <% end %>
+  </ul>
+  <a class="details-link hidden-xs" href="#product-footer-part" data-scroll="true">
+    <%= Spree.t(:read_more) %> &raquo;
+  </a>
+<% end %>
